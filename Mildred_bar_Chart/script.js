@@ -5,7 +5,7 @@ google.charts.load('current', {'packages':['bar']});
               var data = new google.visualization.arrayToDataTable([
                 ['Months', 'Numbers of days'],
                 ["Jaunary", 31],
-                ["Faburay", 29],
+                ["Faburay", 28],
                 ["March", 31],
                 ["April", 30], 
                 ["May", 31],
@@ -29,12 +29,12 @@ google.charts.load('current', {'packages':['bar']});
                 bars: 'vertical',
                 axes: {
                   x: {
-                    0: { side: 'bottom', label: 'Months'} // Top x-axis.
+                    0: { side: 'bottom', label: 'Months'} // bottom x-axis.
                   }
                 },
                 bar: { groupWidth: "80%" }
               };
       
-              var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+              var chart = new google.charts.Bar(document.getElementById('mybarchart'));
               chart.draw(data, options);
             };
