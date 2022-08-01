@@ -16,30 +16,30 @@ const entry = [{
 },
 {
     Month: 'Day2',
-    Orange: 20,
-    Camtel: 29,
-    MTN: 6,
+    Orange: 40,
+    Camtel: 19,
+    MTN: 80,
     Nextel: 30
 },
 {
     Month: 'Day3',
-    Orange: 10,
+    Orange: 50,
     Camtel: 31,
-    MTN: 8,
+    MTN: 100,
     Nextel: 20
 },
 {
     Month: 'Day4',
-    Orange: 20,
-    Camtel: 30,
-    MTN: 9,
+    Orange: 50,
+    Camtel: 16,
+    MTN: 73,
     Nextel: 31
 },
 {
     Month: 'Day5',
     Orange: 22,
-    Camtel: 31,
-    MTN: 12,
+    Camtel: 61,
+    MTN: 32,
     Nextel: 12
 },
 {

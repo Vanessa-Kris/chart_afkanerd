@@ -15,6 +15,18 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col mt-5 ps-5">
+
+                   <!-- Chart type -->
+                   <label class="form-label">Chart type:</label>
+
+                   <select class="form-control " id="chart-type">
+                       <option value="">Chart type</option>
+                       <option value="line_chart">Line chart</option>
+                       <option value="bar_chart">Bar Chart</option>
+                   </select>
+
+
+
                 <!-- Months -->
                 <label class="form-label">Months:</label>
 
@@ -34,7 +46,7 @@
                     <option id="december" value="December">December</option>
                 </select>
 
-
+                
                 <!-- Operator -->
                 <label class="form-label">Network Operators:</label>
 
@@ -45,17 +57,6 @@
                     <option onclick="mycamtelFunction()" value="camtel">Camtel</option>
                     <option onclick="mynextelFunction()" value="nextel">Nextel</option>
                     <option onclick="myallFunction()" value="nextel">All</option>
-                </select>
-
-
-
-                <!-- Chart type -->
-                <label class="form-label">Chart type:</label>
-
-                <select class="form-control " id="chart-type">
-                    <option value="">Chart type</option>
-                    <option value="line_chart">Line chart</option>
-                    <option value="bar_chart">Bar Chart</option>
                 </select>
 
             </div>
