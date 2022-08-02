@@ -1,5 +1,8 @@
 body {
     background-color: rgb(151, 182, 227);
+    background-image: url(assets/stacked-steps-haikei\(1\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .form-control {
@@ -9,3 +12,4 @@ body {
 .me {
     height: 800px
 }
+
