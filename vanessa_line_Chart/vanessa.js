@@ -45,7 +45,7 @@ function my1stFunction() {
 
             },
             hAxis: {
-                title: ',,,'
+                title: 'Months'
             },
             'title': 'Daily Subscribers Visualization',
 
@@ -104,7 +104,7 @@ function my2ndFunction() {
 
             },
             hAxis: {
-                title: ',,,'
+                title: 'Months'
             },
             'title': 'Daily Subscribers Visualization',
 
@@ -162,7 +162,7 @@ function my3rdFunction() {
 
             },
             hAxis: {
-                title: ',,,'
+                title: 'Months'
             },
             'title': 'Daily Subscribers Visualization',
 
