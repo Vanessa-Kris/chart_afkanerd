@@ -5,7 +5,7 @@ const entry = [{
         Orange: 'Orange subscribers',
         Camtel: 'Camtel Subscribers',
         MTN: 'MTN Subscribers',
-        Nextel: 'Nextel'
+        Nextel: 'Nextel Subscribers'
     },
     {
         Month: 'Day1',
