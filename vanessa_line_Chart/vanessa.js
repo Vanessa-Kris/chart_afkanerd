@@ -1,4 +1,3 @@
-
 // 28 Days
 function my1stFunction() {
     google.charts.load('current', {
@@ -20,7 +19,7 @@ function my1stFunction() {
         ])
 
         entry.map(function (element) {
-            if(element.Days == 28){
+            if (element.Days == 28) {
                 data = []
                 data.push(element.Month)
                 data.push(element.Nextel)
@@ -31,7 +30,7 @@ function my1stFunction() {
                 result.push(data);
             }
         })
-       
+
         var data = google.visualization.arrayToDataTable(
             result
         );
@@ -52,8 +51,8 @@ function my1stFunction() {
         };
         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
 
-                 chart.draw(data, options);
-       
+        chart.draw(data, options);
+
     }
 }
 
@@ -79,7 +78,7 @@ function my2ndFunction() {
         ])
 
         entry.map(function (element) {
-            if(element.Days == 30){
+            if (element.Days == 30) {
                 data = []
                 data.push(element.Month)
                 data.push(element.Nextel)
@@ -90,7 +89,7 @@ function my2ndFunction() {
                 result.push(data);
             }
         })
-       
+
         var data = google.visualization.arrayToDataTable(
             result
         );
@@ -111,8 +110,8 @@ function my2ndFunction() {
         };
         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
 
-                 chart.draw(data, options);
-       
+        chart.draw(data, options);
+
     }
 }
 
@@ -137,7 +136,7 @@ function my3rdFunction() {
         ])
 
         entry.map(function (element) {
-            if(element.Days == 31){
+            if (element.Days == 31) {
                 data = []
                 data.push(element.Month)
                 data.push(element.Nextel)
@@ -148,7 +147,7 @@ function my3rdFunction() {
                 result.push(data);
             }
         })
-       
+
         var data = google.visualization.arrayToDataTable(
             result
         );
@@ -169,7 +168,7 @@ function my3rdFunction() {
         };
         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
 
-                 chart.draw(data, options);
-       
+        chart.draw(data, options);
+
     }
 }
