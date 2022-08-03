@@ -102,13 +102,6 @@ const entry = [{
         MTN: 20,
         Nextel: 6
     }
-    
-];
 
-// function my1stFunction(); {
-//     let month_type = document.getElementById("months").value;
-//             if (month_type == "28") {
-//                 result = entry.map[2];
-// }
-//}
+];
 
