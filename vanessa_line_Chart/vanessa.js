@@ -48,7 +48,7 @@ function my1stFunction() {
             hAxis: {
                 title: 'Months'
             },
-            'title': 'Daily Subscribers Visualization',
+            'title': 'Monthly Subscribers Visualization',
 
         };
         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
@@ -109,7 +109,7 @@ function my2ndFunction() {
             hAxis: {
                 title: 'Months'
             },
-            'title': 'Daily Subscribers Visualization',
+            'title': 'Monthly Subscribers Visualization',
 
         };
         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
@@ -169,7 +169,7 @@ function my3rdFunction() {
             hAxis: {
                 title: 'Months'
             },
-            'title': 'Daily Subscribers Visualization',
+            'title': 'Monthly Subscribers Visualization',
 
         };
         var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
@@ -211,7 +211,9 @@ function my4thFunction() {
             hAxis: {
                 title: 'Months'
             },
-            'title': 'Daily Subscribers Visualization',
+            'title': 'Monthly Subscribers Visualization',
+            width: 900,
+            height: 500,
 
         };
 
