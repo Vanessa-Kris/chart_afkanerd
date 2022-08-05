@@ -147,7 +147,7 @@ function drawChart() {
         hAxis: {
             title: 'Months'
         },
-        'title': 'Monthly Subscribers Visualization',
+        'title': 'The 12 Months in a Year',
         width: 900,
         height: 500,
     };
@@ -155,7 +155,7 @@ function drawChart() {
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.BarChart(document.getElementById('chart_div'))
     chart.draw(data, options);
-}
+};
 // end of default chart
 
 
@@ -430,7 +430,7 @@ function drawChart() {
         hAxis: {
             title: 'Months'
         },
-        'title': 'Monthly Subscribers Visualization',
+        'title': 'The 12 Months in a Year',
         width: 900,
         height: 500,
     };
