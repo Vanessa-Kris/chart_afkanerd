@@ -17,17 +17,18 @@
 
             <div class="col mt-5 ps-5">
                 <label class="form-label">Types of Months</label>
-
+               
                 <select class="form-control" id="months">
+                    <option onclick="my5thFunction()" value="All"> All </option>
                     <option onclick="my1stFunction()" value="28">28 Days</option>
-                    <option onclick="my2stFunction()" value="29">29 Days</option>
-                    <option onclick="my3ndFunction()" value="30">30 Days</option>
-                    <option onclick="my4rdFunction()" value="31">31 Days</option>
+                    <option onclick="my2ndFunction()" value="29">29 Days</option>
+                    <option onclick="my3rdFunction()" value="30">30 Days</option>
+                    <option onclick="my4thFunction()" value="31">31 Days</option>
                 </select>
             </div>
 
             <div class="col-8 pt-5 ">
-
+                <div  onload="my5thFunction()" id="All"></div>
                 <!-- Chart display -->
                 <div id="chart_div"></div>
             </div>
@@ -39,7 +40,7 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript"></script>
     <!-- My JS -->
-    <script src="script.js"></script>
+   <script src="script.js"></script>
     <script src="Main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
