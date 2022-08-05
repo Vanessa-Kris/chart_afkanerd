@@ -119,48 +119,42 @@ const entry = [{
 //Default chart 
 // Default
 // Default
-
-function chartAll() {
-     google.charts.load('current', {
-    'packages': ['corechart']
-});
+// All chart
+    google.charts.load('current', {
+        'packages': ['corechart']
+    });
 
 // Set a callback to run when the Google Visualization API is loaded.
 google.charts.setOnLoadCallback(drawChart);
-function drawBasic() {
 
-    var data = google.visualization.arrayToDataTable([
-      ['Months', 'Days'],
-      ['January', 31],
-      ['Febuary', 29],
-      ['March', 31],
-      ['April', 30],
-      ['May', 31],
-      ['June', 30],
-      ['July', 31],
-      ['August', 31],
-      ['September', 30],
-      ['October', 31],
-      ['November', 30],
-      ['December', 31]
-    ]);
+function drawChart() {
+    var data = google.visualization.arrayToDataTable(
+        entry.map(function (element) {
+            result = []
+            result.push(element.Month)
+            result.push(element.Days)
+            return result;
+        })
+    );
 
+    // Set chart options
     var options = {
-      title: 'The 12 Months in a Year',
-      chartArea: {width: '50%'},
-      hAxis: {
-        title: 'Jan-Dec',
-        minValue: 0
-      },
-      vAxis: {
-        title: 'Months'
-      }
+        vAxis: {
+            title: 'Days',
+            format: '0',
+
+        },
+        hAxis: {
+            title: 'Months'
+        },
+        'title': 'Monthly Subscribers Visualization',
+        width: 900,
+        height: 500,
     };
 
-    var chart = new google.visualization.BarChart(document.getElementById('All'));
-
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.BarChart(document.getElementById('chart_div'))
     chart.draw(data, options);
-  }
 }
 // end of default chart
 
@@ -424,9 +418,7 @@ function drawChart() {
             result.push(element.Days)
             return result;
         })
-
     );
-
 
     // Set chart options
     var options = {
@@ -446,5 +438,5 @@ function drawChart() {
     // Instantiate and draw our chart, passing in some options.
     var chart = new google.visualization.BarChart(document.getElementById('chart_div'))
     chart.draw(data, options);
-};
 }
+};
