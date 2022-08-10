@@ -19,25 +19,24 @@ function drawChart() {
 
     );
 
-
     // Set chart options
     var options = {
         vAxis: {
             title: 'Days',
             format: '0',
-
         },
+
         hAxis: {
-            title: 'Months'
+            title: 'Months',
+            minValue: 0
+
         },
         'title': 'Monthly Subscribers Visualization',
-        width: 900,
-        height: 500,
-
-    };
+        
+            };
 
     // Instantiate and draw our chart, passing in some options.
-    var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+    var chart = new google.visualization.BarChart(document.getElementById('chart2_div'));
 
     chart.draw(data, options);
 
@@ -45,7 +44,7 @@ function drawChart() {
 
 
 // 28 Days
-function my1stFunction() {
+function my5thFunction() {
     google.charts.load('current', {
         'packages': ['corechart']
     });
@@ -59,10 +58,6 @@ function my1stFunction() {
         result.push([
             entry[0].Month,
             entry[0].Days,
-            // entry[0].Nextel,
-            // entry[0].Orange,
-            // entry[0].MTN,
-            // entry[0].Camtel
         ])
 
         entry.map(function (element) {
@@ -70,11 +65,6 @@ function my1stFunction() {
                 data = []
                 data.push(element.Month)
                 data.push(element.Days)
-                // data.push(element.Nextel)
-                // data.push(element.Orange)
-                // data.push(element.MTN)
-                // data.push(element.Camtel)
-
                 result.push(data);
             }
         })
@@ -83,21 +73,23 @@ function my1stFunction() {
             result
         );
 
-
         // Set chart options
         var options = {
             vAxis: {
                 title: 'Days',
-                format: '0',
-
+                format: '0'
             },
+
             hAxis: {
-                title: 'Months'
+                title: 'Months',
+                minValue: 0
             },
-            'title': 'Monthly Subscribers Visualization',
 
+            'title': 'Monthly Subscribers Visualization',
+            
+            
         };
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.BarChart(document.getElementById('chart2_div'));
 
         chart.draw(data, options);
 
@@ -106,7 +98,7 @@ function my1stFunction() {
 
 
 // 30 Days
-function my2ndFunction() {
+function my6thFunction() {
     google.charts.load('current', {
         'packages': ['corechart']
     });
@@ -120,22 +112,12 @@ function my2ndFunction() {
         result.push([
             entry[0].Month,
             entry[0].Days,
-            // entry[0].Nextel,
-            // entry[0].Orange,
-            // entry[0].MTN,
-            // entry[0].Camtel
         ])
 
         entry.map(function (element) {
             if (element.Days == 30) {
                 data = []
                 data.push(element.Month)
-                data.push(element.Days)
-                // data.push(element.Nextel)
-                // data.push(element.Orange)
-                // data.push(element.MTN)
-                // data.push(element.Camtel)
-
                 result.push(data);
             }
         })
@@ -144,21 +126,23 @@ function my2ndFunction() {
             result
         );
 
-
         // Set chart options
         var options = {
             vAxis: {
                 title: 'Days',
-                format: '0',
-
+                format: '0'
             },
+
             hAxis: {
-                title: 'Months'
+                title: 'Months',
+                minValue: 0
             },
-            'title': 'Monthly Subscribers Visualization',
 
+            'title': 'Monthly Subscribers Visualization',
+            
+            
         };
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.BarChart(document.getElementById('chart2_div'));
 
         chart.draw(data, options);
 
@@ -166,7 +150,7 @@ function my2ndFunction() {
 }
 
 // 31 Days
-function my3rdFunction() {
+function my7thFunction() {
     google.charts.load('current', {
         'packages': ['corechart']
     });
@@ -180,10 +164,6 @@ function my3rdFunction() {
         result.push([
             entry[0].Month,
             entry[0].Days,
-            // entry[0].Nextel,
-            // entry[0].Orange,
-            // entry[0].MTN,
-            // entry[0].Camtel
         ])
 
         entry.map(function (element) {
@@ -191,11 +171,6 @@ function my3rdFunction() {
                 data = []
                 data.push(element.Month)
                 data.push(element.Days)
-                // data.push(element.Nextel)
-                // data.push(element.Orange)
-                // data.push(element.MTN)
-                // data.push(element.Camtel)
-
                 result.push(data);
             }
         })
@@ -204,21 +179,23 @@ function my3rdFunction() {
             result
         );
 
-
         // Set chart options
         var options = {
             vAxis: {
                 title: 'Days',
-                format: '0',
-
+                format: '0'
             },
+
             hAxis: {
-                title: 'Months'
+                title: 'Months',
+                minValue: 0
             },
-            'title': 'Monthly Subscribers Visualization',
 
+            'title': 'Monthly Subscribers Visualization',
+            
+            
         };
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.BarChart(document.getElementById('chart2_div'));
 
         chart.draw(data, options);
 
@@ -226,7 +203,7 @@ function my3rdFunction() {
 }
 
 // 
-function my4thFunction() {
+function my8thFunction() {
     google.charts.load('current', {
         'packages': ['corechart']
     });
@@ -246,25 +223,26 @@ function my4thFunction() {
 
         );
 
-
         // Set chart options
         var options = {
             vAxis: {
                 title: 'Days',
-                format: '0',
+                format: '0'
+            },
 
-            },
             hAxis: {
-                title: 'Months'
+                title: 'Months',
+                minValue: 0
             },
+
             'title': 'Monthly Subscribers Visualization',
-            width: 900,
-            height: 500,
+            
+            
 
         };
 
         // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        var chart = new google.visualization.BarChart(document.getElementById('chart2_div'));
 
         chart.draw(data, options);
 
