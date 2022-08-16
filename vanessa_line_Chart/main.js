@@ -20,7 +20,7 @@ function run(month_type) {
         if (this.readyState == 4 && this.status == 200) {
             let entry = JSON.parse(this.responseText);
 
-            // call line chart function
+            // call chart function
             line();
             bar();
 
