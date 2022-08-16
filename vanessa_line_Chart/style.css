@@ -2,10 +2,10 @@ body {
     background-image: url(assets/blurry-gradient-haikei\(1\).svg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 100%; */
+    height: fit-content;
 }
 
-.row{
+.row {
     justify-content: center;
 }
 
@@ -16,6 +16,13 @@ body {
 @media only screen and (max-width: 600px) {
     .form-control {
         width: 100px;
-}
+        height: fit-content;
+    }
 }
 
+.title {
+    font-family: Ubuntu, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
