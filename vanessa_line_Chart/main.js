@@ -19,6 +19,11 @@ function run(month_type) {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let entry = JSON.parse(this.responseText);
+            
+            let headers = [
+                "Month",
+                "Day"
+            ]
 
             // call chart function
             line();
@@ -33,18 +38,21 @@ function run(month_type) {
 
                     // Condition for month types
                     if (month_type == "all") {
+                        result.push(headers);
+
                         entry.map(function (element) {
                             data = []
 
                             data.push(element.Month);
-                            data.push(element.Days);
+                            data.push(element.users);
 
                             result.push(data);
                         })
+                        console.log(result)
                     } else {
                         result.push([
                             entry[0].Month,
-                            entry[0].Days
+                            entry[0].Day
                         ])
 
                         entry.map(function (element) {
@@ -52,7 +60,7 @@ function run(month_type) {
                                 data = []
 
                                 data.push(element.Month);
-                                data.push(element.Days);
+                                data.push(element.Day);
 
                                 result.push(data);
                             }
@@ -89,21 +97,21 @@ function run(month_type) {
                 google.charts.setOnLoadCallback(drawChart);
 
                 function drawChart() {
-                    result = []
+                    result = [0]
 
                     if (month_type == "all") {
                         entry.map(function (element) {
                             data = []
 
                             data.push(element.Month);
-                            data.push(element.Days);
+                            data.push(element.Day);
 
                             result.push(data);
                         })
                     } else {
                         result.push([
                             entry[0].Month,
-                            entry[0].Days
+                            entry[0].Day
                         ])
 
                         entry.map(function (element) {
@@ -111,7 +119,7 @@ function run(month_type) {
                                 data = []
 
                                 data.push(element.Month);
-                                data.push(element.Days);
+                                data.push(element.Day);
 
                                 result.push(data);
                             }
@@ -146,6 +154,6 @@ function run(month_type) {
         }
     };
 
-    xhttp.open("GET", "data.json", true);
+    xhttp.open("GET", "https://6047e344b801a40017ccd1df.mockapi.io/api/metrics", true);
     xhttp.send();
 }
