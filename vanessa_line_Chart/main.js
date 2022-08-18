@@ -22,7 +22,7 @@ function run(month_type) {
             
             let headers = [
                 "Month",
-                "Day"
+                "Users"
             ]
 
             // call chart function
@@ -45,14 +45,14 @@ function run(month_type) {
 
                             data.push(element.Month);
                             data.push(element.users);
-
+                          
                             result.push(data);
                         })
-                        console.log(result)
+                        
                     } else {
                         result.push([
                             entry[0].Month,
-                            entry[0].Day
+                            entry[0].users
                         ])
 
                         entry.map(function (element) {
@@ -60,7 +60,8 @@ function run(month_type) {
                                 data = []
 
                                 data.push(element.Month);
-                                data.push(element.Day);
+                                data.push(element.users);
+
 
                                 result.push(data);
                             }
@@ -96,22 +97,27 @@ function run(month_type) {
                 // Set a callback to run when the Google Visualization API is loaded.
                 google.charts.setOnLoadCallback(drawChart);
 
+                
                 function drawChart() {
-                    result = [0]
+                    result = []
 
+                    // Condition for month types
                     if (month_type == "all") {
+                        result.push(headers);
+
                         entry.map(function (element) {
                             data = []
 
                             data.push(element.Month);
-                            data.push(element.Day);
+                            data.push(element.users);
 
                             result.push(data);
                         })
+                        
                     } else {
                         result.push([
                             entry[0].Month,
-                            entry[0].Day
+                            entry[0].users
                         ])
 
                         entry.map(function (element) {
@@ -119,7 +125,8 @@ function run(month_type) {
                                 data = []
 
                                 data.push(element.Month);
-                                data.push(element.Day);
+                                data.push(element.users);
+
 
                                 result.push(data);
                             }
@@ -129,7 +136,6 @@ function run(month_type) {
                     var data = google.visualization.arrayToDataTable(
                         result
                     );
-
                     // Set chart options
                     var options = {
                         vAxis: {
